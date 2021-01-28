@@ -22,15 +22,15 @@ embedded_components {
   id: "label"
   type: "label"
   data: "size {\n"
-  "  x: 128.0\n"
-  "  y: 64.0\n"
+  "  x: 10.0\n"
+  "  y: 10.0\n"
   "  z: 0.0\n"
   "  w: 0.0\n"
   "}\n"
   "scale {\n"
-  "  x: 7.799\n"
-  "  y: 7.799\n"
-  "  z: 7.799\n"
+  "  x: 15.2\n"
+  "  y: 15.2\n"
+  "  z: 15.2\n"
   "  w: 0.0\n"
   "}\n"
   "color {\n"
@@ -56,14 +56,12 @@ embedded_components {
   "pivot: PIVOT_CENTER\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   "line_break: false\n"
-  "text: \"10\\n"
-  "\"\n"
-  "  \"\"\n"
+  "text: \"0\"\n"
   "font: \"/builtins/fonts/system_font.font\"\n"
   "material: \"/builtins/fonts/label.material\"\n"
   ""
   position {
-    x: 471.0
+    x: 356.0
     y: 0.0
     z: 0.0
   }
