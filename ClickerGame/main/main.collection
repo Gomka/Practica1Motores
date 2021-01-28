@@ -1,2 +1,22 @@
 name: "main"
+instances {
+  id: "pig"
+  prototype: "/main/pig.go"
+  position {
+    x: 211.0
+    y: 222.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.216
+    y: 0.216
+    z: 0.216
+  }
+}
 scale_along_z: 0
