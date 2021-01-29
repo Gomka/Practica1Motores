@@ -1,7 +1,7 @@
 name: "main"
 instances {
   id: "pig"
-  prototype: "/main/pig.go"
+  prototype: "/pig/pig.go"
   position {
     x: 214.0
     y: 226.0

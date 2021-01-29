@@ -1,7 +1,7 @@
 embedded_components {
   id: "factory"
   type: "factory"
-  data: "prototype: \"/main/boar.go\"\n"
+  data: "prototype: \"/boar/boar.go\"\n"
   "load_dynamically: false\n"
   ""
   position {
