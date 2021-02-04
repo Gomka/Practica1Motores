@@ -1,0 +1,16 @@
+local clickCounter = require("main.clickCounter")
+
+function init(self)
+	-- Add initialization code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("createBoar") then
+		local p = go.get_position()
+		p.y = vmath.lerp(math.random(), min_y, max_y)
+		local component = "#factory"
+		factory.create(component, p)
+	end
+end

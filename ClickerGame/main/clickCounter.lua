@@ -8,7 +8,7 @@ function Counter.mouseClick()
 
 	if Counter.mouseClicks >= 10 then
 		Counter.mouseClicks = 0
-		-- Spawn Boar
+		msg.post("boarFactory#boarFactory", "createBoar")
 		print("jabali")
 	end
 end
