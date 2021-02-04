@@ -1,0 +1,6 @@
+local clickCounter = require("main.clickCounter")
+
+function update(self, dt)
+	local s = gui.get_node("text")
+	gui.set_text(s, clickCounter.getClicks())
+end

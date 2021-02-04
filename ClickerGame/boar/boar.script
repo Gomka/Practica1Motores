@@ -1,3 +1,4 @@
+local clickCounter = require("main.clickCounter")
 go.property("m_period", 3)
 
 local timer = 0
@@ -9,7 +10,7 @@ end
 function update(self, dt)
 	self.timer = self.timer - dt
 	if self.timer <= 0 then
-		-- Cosa
+		clickCounter.boarClick()
 		self.timer = self.m_period
 	end
 end

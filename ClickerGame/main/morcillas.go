@@ -1,11 +1,6 @@
-embedded_components {
-  id: "sprite"
-  type: "sprite"
-  data: "tile_set: \"/sprites/sprites.atlas\"\n"
-  "default_animation: \"morcilla\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
-  "blend_mode: BLEND_MODE_ALPHA\n"
-  ""
+components {
+  id: "morcillas"
+  component: "/main/morcillas.gui"
   position {
     x: 0.0
     y: 0.0
@@ -19,49 +14,15 @@ embedded_components {
   }
 }
 embedded_components {
-  id: "label"
-  type: "label"
-  data: "size {\n"
-  "  x: 10.0\n"
-  "  y: 10.0\n"
-  "  z: 0.0\n"
-  "  w: 0.0\n"
-  "}\n"
-  "scale {\n"
-  "  x: 4.316\n"
-  "  y: 4.316\n"
-  "  z: 4.316\n"
-  "  w: 0.0\n"
-  "}\n"
-  "color {\n"
-  "  x: 1.0\n"
-  "  y: 1.0\n"
-  "  z: 1.0\n"
-  "  w: 1.0\n"
-  "}\n"
-  "outline {\n"
-  "  x: 0.0\n"
-  "  y: 0.0\n"
-  "  z: 0.0\n"
-  "  w: 1.0\n"
-  "}\n"
-  "shadow {\n"
-  "  x: 0.0\n"
-  "  y: 0.0\n"
-  "  z: 0.0\n"
-  "  w: 1.0\n"
-  "}\n"
-  "leading: 1.0\n"
-  "tracking: 0.0\n"
-  "pivot: PIVOT_CENTER\n"
+  id: "sprite"
+  type: "sprite"
+  data: "tile_set: \"/sprites/sprites.atlas\"\n"
+  "default_animation: \"morcilla\"\n"
+  "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
-  "line_break: false\n"
-  "text: \"0\"\n"
-  "font: \"/builtins/fonts/system_font.font\"\n"
-  "material: \"/builtins/fonts/label.material\"\n"
   ""
   position {
-    x: 356.0
+    x: 0.0
     y: 0.0
     z: 0.0
   }
