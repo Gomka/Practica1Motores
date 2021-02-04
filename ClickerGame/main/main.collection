@@ -3,7 +3,7 @@ instances {
   id: "pig"
   prototype: "/pig/pig.go"
   position {
-    x: 214.0
+    x: 465.0
     y: 226.0
     z: 0.0
   }
@@ -37,26 +37,6 @@ instances {
     x: 0.392
     y: 0.392
     z: 0.392
-  }
-}
-instances {
-  id: "gameController"
-  prototype: "/main/gameController.go"
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
   }
 }
 scale_along_z: 0

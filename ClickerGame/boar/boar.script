@@ -1,1 +1,15 @@
--- Este script ha de generar un click cada 3 segundos (creo)
+go.property("m_period", 3)
+
+local timer = 0
+
+function init(self)
+	self.timer = self.m_period
+end
+
+function update(self, dt)
+	self.timer = self.timer - dt
+	if self.timer <= 0 then
+		-- Cosa
+		self.timer = self.m_period
+	end
+end
