@@ -8,6 +8,7 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("createBoar") then
+		print("pong")
 		local p = go.get_position()
 		p.y = vmath.lerp(math.random(), min_y, max_y)
 		local component = "#factory"
