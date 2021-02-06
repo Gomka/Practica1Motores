@@ -43,8 +43,8 @@ instances {
   id: "boarFactory"
   prototype: "/boar/boarFactory.go"
   position {
-    x: 0.0
-    y: 0.0
+    x: 844.0
+    y: 547.0
     z: 0.0
   }
   rotation {
@@ -54,9 +54,9 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
+    x: 0.1
+    y: 0.1
+    z: 0.1
   }
 }
 scale_along_z: 0

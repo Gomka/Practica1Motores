@@ -10,7 +10,8 @@ end
 function update(self, dt)
 	self.timer = self.timer - dt
 	if self.timer <= 0 then
-		clickCounter.boarClick()
+		clickCounter.click()
+		sound.play("#sound")
 		self.timer = self.m_period
 	end
 end
