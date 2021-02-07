@@ -1,0 +1,17 @@
+local clickCounter = require("main.clickCounter")
+
+local offset = 0
+
+function init(self)
+	sound.play("#sound", {delay = 0, gain = 0.3})
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("createBoar") then
+		local p = go.get_position()
+		p.y = p.y + offset
+		local component = "#factory"
+		factory.create(component, p)
+		offset = offset -20
+	end
+end

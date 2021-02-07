@@ -1,0 +1,40 @@
+local clickCounter = require("main.clickCounter")
+
+go.property("m_clickValue", 1)
+go.property("speed", 1)
+go.property("numClicksToBoar", 10)
+
+local rot = 0
+
+local m_spriteInfo = {}
+
+m_spriteInfo.size = {x = 450, y = 450}
+m_spriteInfo.offset = {x = m_spriteInfo.size.x * 0.5, y = m_spriteInfo.size.y *0.5}
+
+m_spriteInfo.ChecIfPositionIsInBounds = function (x,y)
+	local l_position = go.get_position()
+
+	local bXInside = (x <= l_position.x + m_spriteInfo.offset.x) and (x >= l_position.x - m_spriteInfo.offset.x)
+	local bYInside = (y <= l_position.y + m_spriteInfo.offset.y) and (y >= l_position.y - m_spriteInfo.offset.y)
+
+	return bXInside and bYInside
+end
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	clickCounter.setNumClicksToBoar(self.numClicksToBoar)
+end
+
+function update(self, dt)
+	rot = rot + self.speed
+	go.set(".", "euler.z", rot * dt * clickCounter.getClicks())
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("touch") and action.released then
+		if m_spriteInfo.ChecIfPositionIsInBounds(action.x, action.y) then
+			clickCounter.click(1 * self.m_clickValue)
+			sound.play("#sound")
+		end
+	end
+end	
