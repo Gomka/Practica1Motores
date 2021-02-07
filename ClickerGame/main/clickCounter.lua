@@ -21,6 +21,11 @@ function Counter.getNumClicksToBoar()
 	return Counter.numClicksToBoar
 end
 
+function Counter.setNumClicksToBoar(clicks)
+	Counter.numClicksToBoar = clicks
+end
+
+
 function Counter.getClicks()
 	return Counter.clicks
 end
