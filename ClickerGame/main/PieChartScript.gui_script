@@ -1,0 +1,10 @@
+local clickCounter = require("main.clickCounter")
+
+function update(self, dt)
+	pie = gui.get_node("pie")
+	angle = (clickCounter.getMouseClicks() * 360) / clickCounter.getNumClicksToBoar()
+	if clickCounter.getClicks() ~= 0 and angle == 0 then
+		angle = 360
+	end
+	gui.set_fill_angle(pie, angle)
+end

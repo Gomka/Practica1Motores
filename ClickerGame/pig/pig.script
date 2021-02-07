@@ -1,8 +1,6 @@
 local clickCounter = require("main.clickCounter")
 
 go.property("m_clickValue", 1)
-go.property("m_generatorCost", 10)
-go.property("m_generatorCostIncrease", 0)
 
 local m_spriteInfo = {}
 
@@ -29,7 +27,7 @@ end
 function on_input(self, action_id, action)
 	if action_id == hash("touch") and action.released then
 		if m_spriteInfo.ChecIfPositionIsInBounds(action.x, action.y) then
-			clickCounter.click()
+			clickCounter.click(1 * self.m_clickValue)
 			sound.play("#sound")
 		end
 	end
